@@ -1,10 +1,10 @@
+
 public class AutoCorrect {
 
     public static void main(String[] args) {
         Dictionary dict = new Dictionary();
-        //System.out.println(dict.distance("go", "going"));
 
-        Pair b = dict.verification("Р¤РµРѕРґР°Р»РёР·Рј");
+        Pair b = dict.verification("демократ");
         System.out.println(b.word);
     }
 
@@ -13,9 +13,7 @@ public class AutoCorrect {
 class Dictionary {
 
     String[] ar;
-    
-    String str1 ="sfs";
-    String str2 ="ghjfh";
+
 
 //РїРѕРґСЃС‡РµС‚ СѓСЂРѕРІРЅСЏ СЂР°Р·РЅРѕСЃС‚Рё СЃС‚СЂРѕРє
     int distance(String str1, String str2) {
@@ -56,15 +54,12 @@ class Dictionary {
     }
 
     public Dictionary() {
-        ar = new String[8];
-        ar[0] = "goe";
-        ar[1] = "pop";
-        ar[2] = "gfgg";
-        ar[3] = "sgsgg";
-        ar[4] = "tsgfdbg";
-        ar[5] = "dfad";
-        ar[6] = "adfad";
-        ar[7] = "fhgf";
+        ar = new String[5];
+        ar[0] = "демократия";
+        ar[1] = "коммунизм";
+        ar[2] = "олигархия";
+        ar[3] = "социализм";
+        ar[4] = "тирания";
     }
 }
 
