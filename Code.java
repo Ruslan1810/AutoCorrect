@@ -1,9 +1,9 @@
-public class Устинов8ПроверкаОрфографии {
+public class AutoCorrect {
 
     public static void main(String[] args) {
         Dictionary dict = new Dictionary();
 
-        Pair b = dict.verification("демократ");
+        Pair b = dict.verification("РґРµРјРѕРєСЂР°С‚");
         System.out.println(b.word);
     }
 
@@ -14,7 +14,7 @@ class Dictionary {
     String[] ar;
     
 
-//подсчет разности строк
+//РїРѕРґСЃС‡РµС‚ СѓСЂРѕРІРЅСЏ СЂР°Р·РЅРѕСЃС‚Рё СЃС‚СЂРѕРє
     int distance(String str1, String str2) {
         int difference = 0;
         for (int i = 0; i < str1.length() && i < str2.length(); i++) {
@@ -31,7 +31,7 @@ class Dictionary {
 
         return difference;
     }
-//поиск минимального уровня разности между заданной строкой и строками в массиве
+//РїРѕРёСЃРє РјРёРЅРёРјР°Р»СЊРЅРѕРіРѕ СѓСЂРѕРІРЅСЏ СЂР°Р·РЅРѕСЃС‚Рё РјРµР¶РґСѓ Р·Р°РґР°РЅРЅРѕР№ СЃС‚СЂРѕРєРѕР№ Рё СЃС‚СЂРѕРєР°РјРё РІ РјР°СЃСЃРёРІРµ
 
     Pair verification(String str) {
         int ind_min = 0;
@@ -54,11 +54,11 @@ class Dictionary {
 
     public Dictionary() {
         ar = new String[5];
-        ar[0] = "демократия";
-        ar[1] = "коммунизм";
-        ar[2] = "олигархия";
-        ar[3] = "социализм";
-        ar[4] = "тирания";
+        ar[0] = "РґРµРјРѕРєСЂР°С‚РёСЏ";
+        ar[1] = "РєРѕРјРјСѓРЅРёР·Рј";
+        ar[2] = "РѕР»РёРіР°СЂС…РёСЏ";
+        ar[3] = "СЃРѕС†РёР°Р»РёР·Рј";
+        ar[4] = "С‚РёСЂР°РЅРёСЏ";
     }
 }
 
