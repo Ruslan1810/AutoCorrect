@@ -1,5 +1,4 @@
-
-public class AutoCorrect {
+public class Устинов8ПроверкаОрфографии {
 
     public static void main(String[] args) {
         Dictionary dict = new Dictionary();
@@ -13,9 +12,9 @@ public class AutoCorrect {
 class Dictionary {
 
     String[] ar;
+    
 
-
-//РїРѕРґСЃС‡РµС‚ СѓСЂРѕРІРЅСЏ СЂР°Р·РЅРѕСЃС‚Рё СЃС‚СЂРѕРє
+//подсчет разности строк
     int distance(String str1, String str2) {
         int difference = 0;
         for (int i = 0; i < str1.length() && i < str2.length(); i++) {
@@ -32,7 +31,7 @@ class Dictionary {
 
         return difference;
     }
-//РїРѕРёСЃРє РјРёРЅРёРјР°Р»СЊРЅРѕРіРѕ СѓСЂРѕРІРЅСЏ СЂР°Р·РЅРѕСЃС‚Рё РјРµР¶РґСѓ Р·Р°РґР°РЅРЅРѕР№ СЃС‚СЂРѕРєРѕР№ Рё СЃС‚СЂРѕРєР°РјРё РІ РјР°СЃСЃРёРІРµ
+//поиск минимального уровня разности между заданной строкой и строками в массиве
 
     Pair verification(String str) {
         int ind_min = 0;
